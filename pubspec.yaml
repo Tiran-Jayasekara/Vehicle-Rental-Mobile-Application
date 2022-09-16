@@ -1,0 +1,197 @@
+name: travel
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.12.2
+  fluttertoast: ^8.0.7
+  email_auth:
+  mailer: ^5.1.0
+  otp: ^3.0.2
+  postgresql2: ^1.0.2
+  flutter_email_sender: ^5.0.2
+  shared_preferences: ^2.0.13
+  intl: ^0.17.0
+  flutter_local_notifications: ^9.5.3+1
+  cloud_firestore: ^3.1.15
+  firebase_core: ^1.17.0
+  url_launcher: ^6.1.2
+  flutter_phone_direct_caller: ^2.1.1
+  font_awesome_flutter: ^10.1.0
+  email_validator: ^2.0.1
+  js: ^0.6.2
+  pay: ^1.0.10
+  flutter_stripe: ^3.1.0
+
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  device_preview: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^1.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+     - img/rent3.jpg
+     - img/back.jpg
+     - img/person.png
+     - img/eagle.png
+     - img/eagle1.png
+     - img/rent2.jpg
+     - img/boy.png
+     - img/city.png
+     - img/button.png
+     - img/next.png
+     - img/rent.jpg
+     - img/cars/honda/h1.jpeg
+     - img/cars/honda/h2.jpg
+     - img/cars/honda/h3.jpg
+     - img/cars/honda/h4.jpg
+     - img/cars/honda/accord.jpg
+     - img/cars/honda/accordhybrid.jpg
+     - img/cars/honda/civicRTC.jpg
+     - img/cars/honda/insight.jpg
+     - img/cars/honda/sisedan.jpg
+     - img/cars/honda/siswdan2017.jpg
+     - img/cars/suzuki/s1.jpg
+     - img/cars/suzuki/s2.jpg
+     - img/cars/suzuki/s3.jpg
+     - img/cars/suzuki/s4.jpg
+     - img/cars/suzuki/alto.jpg
+     - img/cars/suzuki/celerio.jpg
+     - img/cars/suzuki/ciaz.jpg
+     - img/cars/suzuki/ertiga.jpg
+     - img/cars/suzuki/kizashi.jpg
+     - img/cars/suzuki/swift.jpg
+     - img/cars/audi/a1.jpg
+     - img/cars/audi/a2.jpg
+     - img/cars/audi/a3.jpg
+     - img/cars/audi/a4.jpg
+     - img/cars/audi/A5Cabriolet.jpg
+     - img/cars/audi/A6allroad.jpg
+     - img/cars/audi/rs3sedan.jpg
+     - img/cars/audi/s5coupe.jpg
+     - img/cars/audi/TTCoupe.jpg
+     - img/cars/audi/TTRoadster.jpg
+     - img/cars/benz/b1.jpg
+     - img/cars/benz/b2.jpg
+     - img/cars/benz/b3.jpg
+     - img/cars/benz/b4.jpg
+     - img/cars/benz/AMGHT4.png
+     - img/cars/benz/cabriolet.png
+     - img/cars/benz/coupe.png
+     - img/cars/benz/sedan.png
+     - img/cars/benz/wagon.png
+     - img/cars/benz/maybach.png
+     - img/cars/chavolet/c1.jpg
+     - img/cars/chavolet/c2.jpg
+     - img/cars/chavolet/c3.jpg
+     - img/cars/chavolet/c4.jpg
+     - img/cars/chavolet/boltEUV.jpg
+     - img/cars/chavolet/boltEV.jpg
+     - img/cars/chavolet/camaro.jpg
+     - img/cars/chavolet/corvette.jpg
+     - img/cars/chavolet/malibu.jpg
+     - img/cars/chavolet/spark.jpg
+     - img/cars/toyota/t1.jpg
+     - img/cars/toyota/t2.jpg
+     - img/cars/toyota/t3.jpg
+     - img/cars/toyota/t4.jpg
+     - img/cars/toyota/Avalon.jpg
+     - img/cars/toyota/Camry.jpg
+     - img/cars/toyota/CHR.jpg
+     - img/cars/toyota/Corolla.jpg
+     - img/cars/toyota/Prius.jpg
+     - img/cars/toyota/Yaris.jpg
+     - img/van/bongo.jpg
+     - img/van/caravan.jpg
+     - img/van/dolphin.jpg
+     - img/van/KDH.jpg
+     - img/van/toyotahiace.jpg
+     - img/van/urvan.jpg
+     - img/bike/cb350.jpg
+     - img/bike/chaly.jpg
+     - img/bike/dio.jpg
+     - img/bike/fzv3.jpg
+     - img/bike/gixxer.jpg
+     - img/bike/pulser220.jpg
+     - img/bike/rd350.jpg
+     - img/cab/dmax.jpg
+     - img/cab/f150reguler.jpg
+     - img/cab/hilux.jpg
+     - img/cab/xenon.jpg
+     - assets/gpay.json
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
